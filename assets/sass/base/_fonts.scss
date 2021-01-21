@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../font/MuseoSans-Light.otf') format('opentype'),
+         url('../font/MuseoSans-Light.woff') format('woff'),
+         url('../font/MuseoSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../font/MuseoSans-Medium.otf') format('opentype'),
+         url('../font/MuseoSans-Medium.woff') format('woff'),
+         url('../font/MuseoSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../font/MuseoSans-Bold.otf') format('opentype'),
+         url('../font/MuseoSans-Bold.woff') format('woff'),
+         url('../font/MuseoSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
