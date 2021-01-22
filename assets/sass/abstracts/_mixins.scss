@@ -1,0 +1,39 @@
+@mixin font-face($name, $src, $weight) {
+    @font-face {
+        font-family: $name;
+        src: url('../font/' + $src + '.otf') format('opentype'),
+             url('../font/' + $src + '.woff') format('woff'),
+             url('../font/' + $src + '.woff2') format('woff2');
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@mixin font($size: null, $weight: null, $color: null, $line-height: null) {
+    @if $size != null {
+        font-size: $size
+    }
+
+    @if $weight != null {
+        font-weight: $weight
+    }
+
+    @if $color != null {
+        color: $color
+    }
+
+    @if $line-height != null {
+        line-height: $line-height
+    }
+}
+
+@mixin d-flex($a-items: center, $j-content: space-between, $f-direction: null) {
+    display: flex;
+    align-items: $a-items;
+    justify-content: $j-content;
+
+    @if $f-direction != null {
+        flex-direction: $f-direction;
+    }
+}

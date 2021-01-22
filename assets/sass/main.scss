@@ -1,2 +1,20 @@
-@import 'base/fonts';
 @import 'vendors/bootstrap-reboot';
+@import 'abstracts/mixins';
+@import 'base/fonts';
+
+* {
+    font-family: 'Museo Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+@import 'components/buttons';
+@import 'sections/sections';
+@import 'media/media';

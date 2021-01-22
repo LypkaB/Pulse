@@ -1,0 +1,12 @@
+@media (min-width: 576px) {
+    /*<----- Button ----->*/
+    .button {
+        cursor: pointer;
+    }
+
+    /*<----- Promo ----->*/
+    .header__phone:hover {
+        color: white;
+        text-decoration: none;
+    }
+}

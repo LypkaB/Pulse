@@ -1,27 +1,3 @@
-@font-face {
-  font-family: 'Museo Sans';
-  src: url("../font/MuseoSans-Light.otf") format("opentype"), url("../font/MuseoSans-Light.woff") format("woff"), url("../font/MuseoSans-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Museo Sans';
-  src: url("../font/MuseoSans-Medium.otf") format("opentype"), url("../font/MuseoSans-Medium.woff") format("woff"), url("../font/MuseoSans-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Museo Sans';
-  src: url("../font/MuseoSans-Bold.otf") format("opentype"), url("../font/MuseoSans-Bold.woff") format("woff"), url("../font/MuseoSans-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 /*!
  * Bootstrap Reboot v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -370,4 +346,195 @@ template {
 
 [hidden] {
   display: none !important;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../font/MuseoSans-Light.otf") format("opentype"), url("../font/MuseoSans-Light.woff") format("woff"), url("../font/MuseoSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../font/MuseoSans-Medium.otf") format("opentype"), url("../font/MuseoSans-Medium.woff") format("woff"), url("../font/MuseoSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../font/MuseoSans-Bold.otf") format("opentype"), url("../font/MuseoSans-Bold.woff") format("woff"), url("../font/MuseoSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Museo Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 6px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c70101;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+}
+
+.button_main {
+  margin-top: 67px;
+  padding: 13px 43px;
+  font-size: 16px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header__logo {
+  width: 250px;
+}
+
+.header__official {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.header__official span {
+  display: block;
+  font-size: 18px;
+}
+
+.header__phone {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.promo {
+  min-height: 650px;
+  padding: 21px 0 93px;
+  background: url("../images/promo/promo__bg.jpg") center center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.promo__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 90px;
+  text-transform: uppercase;
+}
+
+.promo__header {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.promo__subheader {
+  margin-top: 17px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.promo__icons {
+  width: 450px;
+  max-width: 100%;
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.promo__icon {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.promo__icon img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.promo__link {
+  margin-top: 18px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.promo__link a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+  /*<----- Button ----->*/
+
+  .button {
+    cursor: pointer;
+  }
+
+  /*<----- Promo ----->*/
+
+  .header__phone:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
