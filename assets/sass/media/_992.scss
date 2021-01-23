@@ -1,4 +1,10 @@
 @media (max-width: 992px) {
+    /*<----- Common ----->*/
+    .advantages,
+    .consultation {
+        padding: 40px 0;
+    }
+
     /*<----- Base ----->*/
     .container {
         padding-left: 15px;
@@ -23,8 +29,6 @@
 
     /*<----- Advantages ----->*/
     .advantages {
-        padding: 40px 0;
-
         &__wrapper {
             margin-top: 30px;
         }
@@ -32,6 +36,22 @@
         &__subtitle,
         &__descr {
             margin-top: 15px;
+        }
+    }
+
+    /*<----- Consultation ----->*/
+    .consultation {
+        min-height: auto;
+        text-align: center;
+
+        .title_left {
+            text-align: inherit;
+        }
+
+        .feed-form {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
