@@ -626,6 +626,10 @@ img {
   font-weight: 300;
 }
 
+.advantages__descr_mobile {
+  display: none;
+}
+
 .advantages__descr a {
   color: #ff0000;
   text-transform: uppercase;
@@ -853,6 +857,14 @@ img {
   .advantages__subtitle,
   .advantages__descr {
     margin-top: 10px;
+  }
+
+  .advantages__descr {
+    display: none;
+  }
+
+  .advantages__descr_mobile {
+    display: block;
   }
 
   .advantages__subtitle {

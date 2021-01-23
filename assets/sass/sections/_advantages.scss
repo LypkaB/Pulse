@@ -25,6 +25,10 @@
         margin-top: 26px;
         @include font(14px, 300);
 
+        &_mobile {
+            display: none;
+        }
+
         a {
             color: #ff0000;
             text-transform: uppercase;

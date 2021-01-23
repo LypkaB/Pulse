@@ -72,6 +72,14 @@
             margin-top: 10px;
         }
 
+        &__descr {
+            display: none;
+
+            &_mobile {
+                display: block;
+            }
+        }
+
         &__subtitle {
             font-size: 16px;
         }
