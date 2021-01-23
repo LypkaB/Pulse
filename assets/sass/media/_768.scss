@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    /*<----- Header ----->*/
+    .header {
+        &__inner {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, 0.9);
+            transition: 0.5s all;
+
+            &_active {
+                top: 0;
+            }
+        }
+
+        &__contacts {
+            margin-top: 20px;
+            align-items: initial;
+
+            .button {
+                margin-top: 20px;
+            }
+        }
+
+        &__menu-btn {
+            display: block;
+        }
+    }
+}

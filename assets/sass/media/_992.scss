@@ -1,0 +1,23 @@
+@media (max-width: 992px) {
+    /*<----- Base ----->*/
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /*<----- Promo ----->*/
+    .promo {
+        min-height: auto;
+        padding-bottom: 40px;
+
+        &__wrap,
+        &__icons,
+        .button_main {
+            margin-top: 40px;
+        }
+
+        &__wrap {
+            align-items: center;
+        }
+    }
+}
