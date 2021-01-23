@@ -1,4 +1,10 @@
 .title {
     @include font(30px, 700, #0d0d0d);
     text-align: center;
+    text-transform: uppercase;
+
+    &_left {
+        @include font(36px, $color: white);
+        text-align: left;
+    }
 }
