@@ -27,4 +27,10 @@
     .button {
         cursor: pointer;
     }
+
+    /*<----- Carousel ----->*/
+    .carousel .slick-arrow {
+        cursor: pointer;
+        outline: none;
+    }
 }
