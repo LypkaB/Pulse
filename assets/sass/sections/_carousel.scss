@@ -23,8 +23,36 @@
         }
     }
 
-    .slick-next  {
-        left: auto;
-        right: -66px;
+    .slick {
+        &-next  {
+            left: auto;
+            right: -66px;
+        }
+
+        &-dots {
+            @include d-flex($j-content: center);
+            margin-top: 20px;
+            padding-left: 0;
+
+            li {
+                width: 11px;
+                height: 11px;
+                margin: 5px;
+                border: 2px solid transparent;
+                border-radius: 50%;
+                background-color: rgba(196, 196, 196, 0.4);
+
+                &.slick-active {
+                    width: 13px;
+                    height: 13px;
+                    border: 2px solid #333;
+                    background-color: transparent;
+                }
+            }
+
+            button {
+                display: none;
+            }
+        }
     }
 }

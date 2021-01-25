@@ -1,7 +1,8 @@
 @media (max-width: 992px) {
     /*<----- Common ----->*/
     .advantages,
-    .consultation {
+    .consultation,
+    .carousel {
         padding: 40px 0;
     }
 
@@ -53,5 +54,10 @@
             margin-left: auto;
             margin-right: auto;
         }
+    }
+
+    /*<----- Carousel ----->*/
+    .carousel__slider {
+        width: 60%;
     }
 }

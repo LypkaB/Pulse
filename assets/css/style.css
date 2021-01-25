@@ -380,6 +380,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 950px;
   margin: 0 auto;
@@ -726,11 +730,46 @@ img {
   right: -66px;
 }
 
+.carousel .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.carousel .slick-dots li {
+  width: 11px;
+  height: 11px;
+  margin: 5px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-color: rgba(196, 196, 196, 0.4);
+}
+
+.carousel .slick-dots li.slick-active {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #333;
+  background-color: transparent;
+}
+
+.carousel .slick-dots button {
+  display: none;
+}
+
 @media (max-width: 992px) {
   /*<----- Common ----->*/
 
   .advantages,
-  .consultation {
+  .consultation,
+  .carousel {
     padding: 40px 0;
   }
 
@@ -786,6 +825,12 @@ img {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /*<----- Carousel ----->*/
+
+  .carousel__slider {
+    width: 60%;
   }
 }
 
@@ -848,6 +893,16 @@ img {
   .advantages__item:last-child {
     margin-top: 20px;
   }
+
+  /*<----- Carousel ----->*/
+
+  .carousel {
+    padding-bottom: 20px;
+  }
+
+  .carousel__slider {
+    width: 80%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -887,6 +942,10 @@ img {
   .carousel .slick-arrow {
     cursor: pointer;
     outline: none;
+  }
+
+  .carousel .slick-dots li {
+    cursor: pointer;
   }
 }
 
@@ -1003,5 +1062,11 @@ img {
   .consultation .button_submit {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  /*<----- Carousel ----->*/
+
+  .carousel {
+    padding-bottom: 0;
   }
 }

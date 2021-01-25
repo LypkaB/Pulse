@@ -29,8 +29,14 @@
     }
 
     /*<----- Carousel ----->*/
-    .carousel .slick-arrow {
-        cursor: pointer;
-        outline: none;
+    .carousel .slick {
+        &-arrow {
+            cursor: pointer;
+            outline: none;
+        }
+
+        &-dots li {
+            cursor: pointer;
+        }
     }
 }
