@@ -73,6 +73,19 @@
             margin-right: 3px;
         }
     }
+
+    /*<----- Feed ----->*/
+    .feed {
+        padding-bottom: 20px;
+
+        &__item {
+            margin-top: 70px;
+
+            &:nth-child(2) {
+                margin-top: 30px;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
