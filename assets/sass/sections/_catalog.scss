@@ -1,0 +1,176 @@
+.catalog {
+    padding-bottom: 100px;
+    color: $dark-grey;
+    text-align: center;
+
+    &__tabs {
+        margin-top: 40px;
+        @include d-flex($j-content: center);
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    &__tab {
+        width: 220px;
+        max-width: 100%;
+        height: 50px;
+        margin: 0 5px;
+        border: 2px solid #d0d0d0;
+        @include font(18px, $color: #6b6b6b, $line-height: 48px);
+        text-transform: uppercase;
+        transform: skewX(-25deg);
+        transition: 0.5s all;
+
+        span {
+            display: block;
+            transform: skewX(25deg);
+        }
+
+        &_active {
+            border: none;
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+
+    &__content {
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 60px;
+
+        &_active {
+            display: flex;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &-item {
+        width: 300px;
+        max-width: 100%;
+        min-height: 440px;
+        padding: 20px 20px 26px;
+        border: 2px solid #e8e8e8;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+
+        &__content {
+            width: 50%;
+            margin-right: 0;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+
+        &__img {
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+            font-weight: 700;
+        }
+
+        &__descr {
+            margin-top: 16px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        &__link {
+            display: block;
+            margin-top: 17px;
+            color: $primary-color;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        &__list {
+            width: 50%;
+            margin-left: 20px;
+            margin-bottom: 0;
+            padding-left: 19px;
+            padding-right: 20px;
+            text-align: left;
+            list-style-type: none;
+            transform: translateX(0%);
+            transition: 0.5s all;
+            position: relative;
+
+            &_active {
+                margin-left: 0;
+                transform: translateX(-100%);
+            }
+
+            li {
+                position: relative;
+                @include font(14px, 300, #555);
+                margin-bottom: 20px;
+
+                &:before {
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background-color: $primary-color;
+                    position: absolute;
+                    left: -14px;
+                    top: 7px;
+                }
+
+                &:last-child {
+                    position: initial;
+
+                    &:before {
+                        content: initial;
+                    }
+                }
+            }
+        }
+
+        &__back {
+            display: block;
+            @include font(14px, 500, $primary-color);
+            text-decoration: underline;
+            text-transform: uppercase;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(calc(-50% - 19px));
+        }
+
+        hr {
+            margin-top: 19px;
+            margin-bottom: 21px;
+            border-bottom: none;
+            background-color: #e8e8e8;
+        }
+
+        &__footer {
+            @include d-flex();
+        }
+
+        &__old-price {
+            @include font(14px, 300, #555);
+            text-decoration: line-through;
+        }
+
+        &__price {
+            @include font(20px, 700, #050505)
+        }
+    }
+}

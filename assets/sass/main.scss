@@ -1,6 +1,6 @@
 @import 'vendors/bootstrap-reboot';
 @import 'abstracts/mixins';
-@import 'base/fonts';
+@import 'base/base';
 
 * {
     font-family: 'Museo Sans', sans-serif;
@@ -11,6 +11,7 @@ img {
 }
 
 ul {
+    padding: 0;
     list-style: none;
 }
 

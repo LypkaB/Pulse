@@ -2,7 +2,7 @@
     padding: 6px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #c70101;
+    background-color: $primary-color;
     @include font(12px, 500, white);
     text-transform: uppercase;
 
@@ -17,5 +17,10 @@
         padding-top: 15px;
         padding-bottom: 15px;
         @include font(16px, $color: white)
+    }
+
+    &_mini {
+        padding: 10px 38px;
+        font-size: 14px;
     }
 }

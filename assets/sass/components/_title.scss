@@ -1,5 +1,5 @@
 .title {
-    @include font(30px, 700, #0d0d0d);
+    @include font(30px, 700, $dark-grey);
     text-align: center;
     text-transform: uppercase;
 

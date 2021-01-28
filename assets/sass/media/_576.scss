@@ -39,4 +39,26 @@
             cursor: pointer;
         }
     }
+
+    /*<----- Catalog ----->*/
+    .catalog {
+        &__tab {
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 3px 3px 20px $primary-color;
+                border: none;
+            }
+        }
+
+        &-item {
+            &__link:hover {
+                color: $dark-grey;
+            }
+
+            &__back:hover {
+                color: #c70101;
+            }
+        }
+    }
 }
