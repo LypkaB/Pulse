@@ -1,4 +1,10 @@
 @media (max-width: 768px) {
+    /*<----- Common ----->*/
+    .carousel,
+    .catalog {
+        padding-bottom: 20px;
+    }
+
     /*<----- Header ----->*/
     .header {
         &__inner {
@@ -49,11 +55,13 @@
     }
 
     /*<----- Carousel ----->*/
-    .carousel {
-        padding-bottom: 20px;
+    .carousel__slider {
+        width: 80%;
+    }
 
-        &__slider {
-            width: 80%;
-        }
+    /*<----- Catalog ----->*/
+    .catalog-item {
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }

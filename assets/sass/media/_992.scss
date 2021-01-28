@@ -2,7 +2,8 @@
     /*<----- Common ----->*/
     .advantages,
     .consultation,
-    .carousel {
+    .carousel,
+    .catalog {
         padding: 40px 0;
     }
 
@@ -59,6 +60,18 @@
     /*<----- Carousel ----->*/
     .carousel__slider {
         width: 60%;
+    }
+
+    /*<----- Catalog ----->*/
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+
+        &-item {
+            margin-left: 3px;
+            margin-right: 3px;
+        }
     }
 }
 
