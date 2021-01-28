@@ -110,16 +110,7 @@
     }
 
     /*<----- Catalog ----->*/
-    .catalog {
-        &__tabs {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        &__tab {
-            height: 30px;
-            font-size: 0.5em;
-            line-height: 28px;
-        }
+    .catalog__tab {
+        font-size: 16px;
     }
 }

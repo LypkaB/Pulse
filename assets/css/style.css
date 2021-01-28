@@ -1238,12 +1238,19 @@ ul {
 
   .catalog__tabs {
     margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .catalog__tab {
-    font-size: 14px;
+    width: 75%;
+    margin-bottom: 20px;
+  }
+
+  .catalog__tab:last-child {
+    margin-bottom: 0;
   }
 
   .catalog__content {
@@ -1379,14 +1386,7 @@ ul {
 
   /*<----- Catalog ----->*/
 
-  .catalog__tabs {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .catalog__tab {
-    height: 30px;
-    font-size: 0.5em;
-    line-height: 28px;
+    font-size: 16px;
   }
 }
