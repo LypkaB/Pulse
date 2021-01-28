@@ -1072,6 +1072,56 @@ ul {
   }
 }
 
+@media (min-width: 992px) {
+  /*<----- Header ----->*/
+
+  .header__phone:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header__menu-btn {
+    cursor: pointer;
+  }
+
+  /*<----- Button ----->*/
+
+  .button {
+    cursor: pointer;
+  }
+
+  /*<----- Carousel ----->*/
+
+  .carousel .slick-arrow {
+    cursor: pointer;
+    outline: none;
+  }
+
+  .carousel .slick-dots li {
+    cursor: pointer;
+  }
+
+  /*<----- Catalog ----->*/
+
+  .catalog__tab {
+    cursor: pointer;
+  }
+
+  .catalog__tab:hover {
+    -webkit-box-shadow: 3px 3px 20px #c70101;
+    box-shadow: 3px 3px 20px #c70101;
+    border: none;
+  }
+
+  .catalog-item__link:hover {
+    color: #0d0d0d;
+  }
+
+  .catalog-item__back:hover {
+    color: #c70101;
+  }
+}
+
 @media (max-width: 768px) {
   /*<----- Header ----->*/
 
@@ -1154,56 +1204,6 @@ ul {
 
   .advantages__item {
     padding: 0 20px;
-  }
-}
-
-@media (min-width: 577px) {
-  /*<----- Header ----->*/
-
-  .header__phone:hover {
-    color: white;
-    text-decoration: none;
-  }
-
-  .header__menu-btn {
-    cursor: pointer;
-  }
-
-  /*<----- Button ----->*/
-
-  .button {
-    cursor: pointer;
-  }
-
-  /*<----- Carousel ----->*/
-
-  .carousel .slick-arrow {
-    cursor: pointer;
-    outline: none;
-  }
-
-  .carousel .slick-dots li {
-    cursor: pointer;
-  }
-
-  /*<----- Catalog ----->*/
-
-  .catalog__tab {
-    cursor: pointer;
-  }
-
-  .catalog__tab:hover {
-    -webkit-box-shadow: 3px 3px 20px #c70101;
-    box-shadow: 3px 3px 20px #c70101;
-    border: none;
-  }
-
-  .catalog-item__link:hover {
-    color: #0d0d0d;
-  }
-
-  .catalog-item__back:hover {
-    color: #c70101;
   }
 }
 

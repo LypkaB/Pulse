@@ -61,3 +61,56 @@
         width: 60%;
     }
 }
+
+@media (min-width: 992px) {
+    /*<----- Header ----->*/
+    .header {
+        &__phone:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        &__menu-btn {
+            cursor: pointer;
+        }
+    }
+
+    /*<----- Button ----->*/
+    .button {
+        cursor: pointer;
+    }
+
+    /*<----- Carousel ----->*/
+    .carousel .slick {
+        &-arrow {
+            cursor: pointer;
+            outline: none;
+        }
+
+        &-dots li {
+            cursor: pointer;
+        }
+    }
+
+    /*<----- Catalog ----->*/
+    .catalog {
+        &__tab {
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 3px 3px 20px $primary-color;
+                border: none;
+            }
+        }
+
+        &-item {
+            &__link:hover {
+                color: $dark-grey;
+            }
+
+            &__back:hover {
+                color: #c70101;
+            }
+        }
+    }
+}
