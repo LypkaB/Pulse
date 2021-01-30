@@ -1,0 +1,43 @@
+.footer {
+    height: 630px;
+    @include font(20px, 500, white, 20px);
+    text-align: center;
+    position: relative;
+
+    &__social-item,
+    &__social {
+        @include d-flex($j-content: center);
+    }
+
+    &__info {
+        padding: 50px 68px 60px;
+        background-color: $primary-color;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__addr {
+        margin-bottom: 36px;
+    }
+
+    &__phone {
+        display: block;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 38px;
+    }
+
+    &__social-item {
+        width: 50px;
+        height: 50px;
+        margin: 0 15px;
+        border: 2px solid white;
+        border-radius: 100%;
+
+        img {
+            height: 27px;
+        }
+    }
+}
