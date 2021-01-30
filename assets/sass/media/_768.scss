@@ -69,4 +69,27 @@
     .feed__text {
         padding-right: 0;
     }
+
+    /*<----- Footer ----->*/
+    .footer {
+        font-size: 14px;
+
+        &__info {
+            padding: 10px;
+        }
+
+        &__addr,
+        &__phone {
+            margin-bottom: 15px;
+        }
+
+        &__social-item {
+            width: 35px;
+            height: 35px;
+
+            img {
+                height: 15px;
+            }
+        }
+    }
 }

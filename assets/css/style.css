@@ -1069,7 +1069,7 @@ ul {
 }
 
 .footer__info {
-  padding: 50px 68px 60px;
+  padding: 30px 50px;
   background-color: #c70101;
   position: absolute;
   top: 0;
@@ -1197,6 +1197,18 @@ ul {
 
   .feed__item:nth-child(2) {
     margin-top: 30px;
+  }
+
+  /*<----- Footer ----->*/
+
+  .footer__info {
+    padding: 25px 30px;
+    top: initial;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
   }
 }
 
@@ -1340,6 +1352,30 @@ ul {
 
   .feed__text {
     padding-right: 0;
+  }
+
+  /*<----- Footer ----->*/
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .footer__info {
+    padding: 10px;
+  }
+
+  .footer__addr,
+  .footer__phone {
+    margin-bottom: 15px;
+  }
+
+  .footer__social-item {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer__social-item img {
+    height: 15px;
   }
 }
 
@@ -1539,5 +1575,11 @@ ul {
 
   .catalog__tab {
     font-size: 16px;
+  }
+
+  /*<----- Footer ----->*/
+
+  .footer__info {
+    width: 100%;
   }
 }
