@@ -1326,7 +1326,7 @@ ul {
     color: white;
   }
 
-  /*<----- Popup ----->*/
+  /*<----- Modal ----->*/
 
   .modal__close {
     cursor: pointer;
@@ -1524,13 +1524,16 @@ ul {
   }
 
   .promo__subheader,
-  .advantages__subtitle {
+  .advantages__subtitle,
+  .catalog__tab,
+  .modal__subtitle {
     font-size: 16px;
   }
 
   .promo .button_main,
   .promo__link,
-  .consultation__descr {
+  .consultation__descr,
+  .modal .button_submit {
     font-size: 14px;
   }
 
@@ -1636,15 +1639,40 @@ ul {
     padding-bottom: 0;
   }
 
-  /*<----- Catalog ----->*/
-
-  .catalog__tab {
-    font-size: 16px;
-  }
-
   /*<----- Footer ----->*/
 
   .footer__info {
     width: 100%;
+  }
+
+  /*<----- Modal ----->*/
+
+  .modal {
+    width: 90%;
+    padding: 18px 20px 20px;
+    min-height: auto;
+  }
+
+  .modal__close {
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+  }
+
+  .modal__descr {
+    font-size: 12px;
+  }
+
+  .modal .feed-form {
+    width: 100%;
+  }
+
+  .modal .feed-form input {
+    padding: 10px 15px;
+  }
+
+  .modal .button_submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
