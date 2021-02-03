@@ -1149,6 +1149,11 @@ ul {
   position: relative;
 }
 
+.footer iframe {
+  width: 100%;
+  height: 630px;
+}
+
 .footer__social-item,
 .footer__social {
   display: -webkit-box;
