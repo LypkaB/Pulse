@@ -7,4 +7,15 @@
     &__descr {
         @include font(20px, 500);
     }
+
+    .error {
+        border: 1px solid red;
+    }
+
+    label.error {
+        color: white;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
