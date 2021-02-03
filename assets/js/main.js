@@ -96,4 +96,21 @@ $(document).ready(function() {
 
     /*<----- Number input mask ----->*/
     $('input[name=phone]').mask('+3 (809) 922-89-74');
+
+    /*<----- Sending letters from website ----->*/
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        $.ajax({
+            type: 'POST',
+            url: 'mailer/smart.php',
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find('input').val('');
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
