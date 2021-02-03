@@ -115,6 +115,11 @@
         cursor: pointer;
     }
 
+    /*<----- Advantages ----->*/
+    .advantages__icon_animated:hover {
+        animation-play-state: paused;
+    }
+
     /*<----- Carousel ----->*/
     .carousel .slick {
         &-arrow {

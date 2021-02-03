@@ -1,6 +1,7 @@
 @import 'vendors/bootstrap-reboot';
 @import 'abstracts/mixins';
-@import 'base/base';
+@import 'base/fonts';
+@import 'base/variables';
 
 * {
     font-family: 'Museo Sans', sans-serif;
@@ -22,4 +23,5 @@ ul {
 
 @import 'components/components';
 @import 'sections/sections';
+@import 'base/animations';
 @import 'media/media';

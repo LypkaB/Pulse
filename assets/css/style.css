@@ -748,6 +748,11 @@ ul {
   max-width: 100%;
 }
 
+.advantages__icon_animated {
+  -webkit-animation: heartbeat 1.5s ease infinite;
+  animation: heartbeat 1.5s ease infinite;
+}
+
 .advantages__subtitle {
   margin-top: 38px;
   font-size: 18px;
@@ -1191,6 +1196,40 @@ ul {
   height: 27px;
 }
 
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 992px) {
   /*<----- Common ----->*/
 
@@ -1317,6 +1356,13 @@ ul {
 
   .button {
     cursor: pointer;
+  }
+
+  /*<----- Advantages ----->*/
+
+  .advantages__icon_animated:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
   }
 
   /*<----- Carousel ----->*/

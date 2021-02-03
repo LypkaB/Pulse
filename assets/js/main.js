@@ -128,4 +128,7 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: $(_href).offset().top + 'px'});
         return false;
     });
+
+    /*<----- Init «wow.js» ----->*/
+    new WOW().init();
 });
