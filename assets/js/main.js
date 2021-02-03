@@ -93,4 +93,7 @@ $(document).ready(function() {
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
+
+    /*<----- Number input mask ----->*/
+    $('input[name=phone]').mask('+3 (809) 922-89-74');
 });
